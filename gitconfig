@@ -34,3 +34,5 @@
 [user]
 	name = Diego Steiner
 	email = diego.steiner@renuo.ch
+[tag]
+	sort = version:refname
