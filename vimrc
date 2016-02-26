@@ -83,7 +83,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-" Make it obvious where 80 characters is
+" Make it obvious where 120 characters is
 set textwidth=120
 set colorcolumn=+1
 
@@ -151,6 +151,11 @@ set complete+=kspell
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+" Colorscheme and colors
+set t_Co=256
+colorscheme jellybeans
+" colorscheme codeschool
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
