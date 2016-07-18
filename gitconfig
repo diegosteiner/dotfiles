@@ -35,6 +35,7 @@
 [user]
 	name = Diego Steiner
 	email = diego.steiner@renuo.ch
+	signingkey = 9B5CB4D4
 [tag]
 	sort = version:refname
 [credential]
