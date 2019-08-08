@@ -45,3 +45,10 @@ _load_settings "$HOME/.zsh/configs"
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+
+# added by travis gem
+[ -f /Users/digi/.travis/travis.sh ] && source /Users/digi/.travis/travis.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

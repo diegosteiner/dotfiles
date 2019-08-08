@@ -15,11 +15,13 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
   ff = only
 	tool = vimdiff
 [commit]
   template = ~/.gitmessage
+	gpgsign = true
 [fetch]
   prune = true
 [rebase]
@@ -34,11 +36,13 @@
 	trustExitCode = true
 [user]
 	name = Diego Steiner
-	email = diego.steiner@renuo.ch
-	signingkey = 9B5CB4D4
+	email = diego.steiner@u041.ch
+	signingKey = F6871DA7
 [tag]
 	sort = version:refname
 [credential]
 	helper = osxkeychain
 [diff]
 	tool = vimdiff
+[url "git@github.com:"]
+	insteadOf = gh:

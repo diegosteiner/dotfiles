@@ -11,7 +11,7 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
-set clipboard=unnamed " Use mac clipboard
+" set clipboard=unnamed " Use mac clipboard
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -126,6 +126,7 @@ nnoremap <silent> <Leader>s :TestNearest<CR>
 nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <leader>gt :TestVisit<CR>
+" let test#ruby#rspec#executable = 'bin/rspec'
 
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
