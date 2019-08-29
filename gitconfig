@@ -21,7 +21,7 @@
 	tool = vimdiff
 [commit]
   template = ~/.gitmessage
-	gpgsign = true
+	gpgSign = true
 [fetch]
   prune = true
 [rebase]
@@ -37,11 +37,11 @@
 [user]
 	name = Diego Steiner
 	email = diego.steiner@u041.ch
-	signingKey = F6871DA7
+	signingkey = 3024672650BAC341360A706BD1481AADA3310788
 [tag]
 	sort = version:refname
 [credential]
-	helper = osxkeychain
+	helper = /usr/lib/git-core/git-credential-libsecret
 [diff]
 	tool = vimdiff
 [url "git@github.com:"]

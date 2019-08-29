@@ -1,0 +1,15 @@
+---
+tasks:
+  default:
+    links:
+      - [".aliases", "aliases"]
+      - [".gitconfig", "gitconfig"]
+      - [".gitignore", "gitignore"]
+      - [".tmux.conf", "tmux.conf"]
+      - [".vimrc", "vimrc"]
+      - [".vimrc.bundles", "vimrc.bundles"]
+      - [".vscode", "vscode"]
+      - [".zsh", "zsh"]
+      - [".zshrc", "zshrc"]
+      - [".zshenv", "zshenv"]
+      - [".ctags", "ctags"]
