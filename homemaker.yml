@@ -13,3 +13,4 @@ tasks:
       - [".zshrc", "zshrc"]
       - [".zshenv", "zshenv"]
       - [".ctags", "ctags"]
+      - [".config/libinput-gestures.conf", "libinput-gestures.conf"]
