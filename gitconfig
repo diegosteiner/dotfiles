@@ -37,7 +37,7 @@
 [user]
 	name = Diego Steiner
 	email = diego.steiner@u041.ch
-	signingkey = 3024672650BAC341360A706BD1481AADA3310788
+	signingkey = 9217C26372CCB057E9352F246A603E90F6871DA7
 [tag]
 	sort = version:refname
 [credential]
@@ -46,3 +46,5 @@
 	tool = vimdiff
 [url "git@github.com:"]
 	insteadOf = gh:
+[gpg]
+	program = gpg

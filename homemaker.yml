@@ -7,6 +7,7 @@ tasks:
       - [".gitignore", "gitignore"]
       - [".tmux.conf", "tmux.conf"]
       - [".vimrc", "vimrc"]
+      - [".vim", "vim"]
       - [".vimrc.bundles", "vimrc.bundles"]
       - [".vscode", "vscode"]
       - [".zsh", "zsh"]

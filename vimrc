@@ -163,7 +163,7 @@ set diffopt+=vertical
 
 " Colorscheme and colors
 set t_Co=256
-colorscheme jellybeans
+" colorscheme jellybeans
 " colorscheme codeschool
 
 " Local config
