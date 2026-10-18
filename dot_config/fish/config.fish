@@ -5,4 +5,4 @@ if status is-interactive
     fish_add_path ~/.local/bin
 end
 
-set -gx EDITOR nano
+set -gx EDITOR helix
