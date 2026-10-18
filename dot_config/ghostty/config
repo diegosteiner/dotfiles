@@ -49,3 +49,5 @@ gtk-single-instance = true
 
 # Dank color generation
 #theme = dankcolors
+
+command = zellij
