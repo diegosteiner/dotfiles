@@ -1,0 +1,14 @@
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+export EDITOR="helix"
+export VISUAL="helix"
+export PAGER="less"
+
+#export LANG="en_US.UTF-8"
+
+eval $(gnome-keyring-daemon --start --components=secrets,ssh)
+export SSH_AUTH_SOCK
+
+
