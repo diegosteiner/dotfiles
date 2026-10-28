@@ -5,8 +5,4 @@ if status is-interactive
     fish_add_path ~/.local/bin
 end
 
-if not set -q SSH_AUTH_SOCK
-    eval (ssh-agent -c) >/dev/null
-end
-
 set -gx EDITOR helix

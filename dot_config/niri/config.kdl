@@ -10,6 +10,7 @@ environment {
   GDK_BACKEND "wayland"
   MOZ_ENABLE_WAYLAND "1"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
+  SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/gcr/ssh"
 }
 
 // Input device configuration.
@@ -116,29 +117,6 @@ output "eDP-1" {
     // automatically.
     //position x=0 y=0
 }
-
-/-output "Philips Consumer Electronics Company PHL 346B1 *" {
-    mode "3440x1440"
-    scale 1
-    transform "normal"
-    //position x=1280 y=0
-}
-
-output "Philips Consumer Electronics Company PHL 346B1C UK02307057137" {
-    mode "3440x1440@59.973"
-    scale 1
-    transform "normal"
-    //position x=1280 y=0
-}
-
-output "Philips Consumer Electronics Company PHL 346P1C UK02210067213" {
-    mode "3440x1440@59.973"
-    scale 1
-    transform "normal"
-    //position x=1280 y=0
-}
-
-
 
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -308,9 +286,8 @@ layout {
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 spawn-sh-at-startup "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 spawn-sh-at-startup "dbus-update-activation-environment --all"
-// handled by greetd
-//spawn-sh-at-startup "gnome-keyring-daemon --start --components=secrets,ssh,pkcs11"
-spawn-sh-at-startup "insync start"
+spawn-sh-at-startup "gnome-keyring-daemon --start --components=secrets,ssh,pkcs11"
+//spawn-sh-at-startup "insync start"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
